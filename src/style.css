@@ -17,13 +17,14 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-transform: capitalize;
   color: #013656;
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
 }
 .weather-app-wrapper {
-  max-width: 60%;
+  max-width: 600px;
   margin: 30px auto;
 }
 .weather-app {
