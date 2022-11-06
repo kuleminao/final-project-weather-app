@@ -24,15 +24,15 @@
                                 autocomplete="off">
                         </div>
                         <div class="col-3">
-                            <input type="submit" value="Search" class="btn btn-primary w-100">
+                            <input type="submit" value="Search" class="btn btn-primary w-300">
                         </div>
                     </div>
                 </form>
                 <div class="overview">
                     <h1 id="city"></h1>
                     <ul>
-                        <li>Last updated: <span id="date"></span> </li>
-                        <li id="description"></li>
+                        <li class="description">Updated: <span id="date"></span> </li>
+                        <li class="description" id="description"></li>
                     </ul>
                 </div>
                 <div class="row">
@@ -41,7 +41,9 @@
                             <img src="" alt="" id="icon">
                             <div>
                                 <strong id="temperature"></strong>
-                                <span class="units">℃</span>
+                                <span class="units"><a href="#" id="celsius-link"
+                                        class="text-decoration-none active">℃</a> |
+                                    <a href="#" id="fahrenheit-link" class="text-decoration-none">℉</a></span>
                             </div>
                         </div>
                     </div>
@@ -51,7 +53,7 @@
                                 Humidity: <span id="humidity"></span>%
                             </li>
                             <li>
-                                Wind: <span id="wind"></span> m/h
+                                Wind: <span id="wind"></span> km/h
                             </li>
                         </ul>
                     </div>
